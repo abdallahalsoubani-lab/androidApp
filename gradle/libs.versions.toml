@@ -53,8 +53,7 @@ timber = "5.0.1"
 detekt = "1.23.4"
 ktlint = "1.1.0"
 
-# Gradle Plugins
-androidGradlePlugin = "8.2.0"
+# Gradle Plugins (versions defined above)
 kotlinGradlePlugin = "1.9.22"
 kspGradlePlugin = "1.9.22-1.0.17"
 hiltGradlePlugin = "2.50"
