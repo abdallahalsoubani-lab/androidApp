@@ -1,0 +1,17 @@
+package com.template.feature.template.di
+
+import com.template.feature.template.data.repository.TemplateRepositoryImpl
+import com.template.feature.template.domain.repository.TemplateRepository
+import dagger.Binds
+import dagger.Module
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
+
+@Module
+@InstallIn(SingletonComponent::class)
+abstract class TemplateModule {
+    @Binds
+    abstract fun bindTemplateRepository(
+        templateRepositoryImpl: TemplateRepositoryImpl,
+    ): TemplateRepository
+}
